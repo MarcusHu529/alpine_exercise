@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Random Name Generator</title>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src="utility.js"></script>
+    </head>
+    <body>
+        <div x-data="nameGenerator()">
+            <h1 x-text="currentName"></h1>
+            <button x-on:CLICK="generateName">Generate Random Name</button>
+        </div>
+    </body>
+</html>
